@@ -1,4 +1,4 @@
-#mismo codigo del archivo analisis.ipynb sin comentarios
+#mismo codigo del archivo analisis.ipynb sin comenta
 
 import pandas as pd
 import numpy as np

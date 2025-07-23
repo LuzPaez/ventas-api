@@ -5,7 +5,7 @@ import pandas as pd  # Para manejar datos en formato DataFrame
 import os  # Para operaciones del sistema de archivos
 
 # Carga del modelo previamente entrenado desde la ruta correspondiente
-modelo = joblib.load('../src/modelo.joblib')
+modelo = joblib.load('src/modelo.joblib')
 
 # Inicialización de la aplicación Flask
 app = Flask(__name__)
@@ -43,6 +43,5 @@ def predict():
         return jsonify({'error': str(e)}), 400
 
 # Ejecutar la aplicación en modo debug si se ejecuta directamente
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+if __name__ == '__main__':
+    app.run(debug=True)
