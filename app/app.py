@@ -5,7 +5,7 @@ import pandas as pd  # Para manejar datos en formato DataFrame
 import os  # Para operaciones del sistema de archivos
 
 # Carga del modelo previamente entrenado desde la ruta correspondiente
-modelo = joblib.load('../src/modelo.joblib')
+modelo = joblib.load('modelo.joblib')
 
 # Inicialización de la aplicación Flask
 app = Flask(__name__)
